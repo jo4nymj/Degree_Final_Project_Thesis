@@ -1,0 +1,50 @@
+\chapter{Conclusiones}
+
+Con este trabajo se ha podido comprobar una manera específica de emplear la inteligencia artificial como herramienta de marketing digital en una tienda electrónica.
+
+Gracias a la aplicación de análisis de sentimientos desarrollada se obtiene información sobre el grado de satisfacción de los clientes. Esto, ya se conseguía anteriormente cuando eran los usuarios quiénes introducían la puntuación. Sin embargo, una de las principales diferencias es que ahora la evaluación de las opiniones está normalizada, en el sentido de que Google NLP siempre utiliza el mismo conjunto de reglas.
+
+La satisfacción del consumidor está estrechamente ligada al personal de atención, ya que es la cara visible de la empresa. Con la implementación del chatbot en la página web se ha creado un nuevo canal de atención al cliente que estará siempre disponible para responder rápidamente a los problemas de los usuarios. También consigue facilitar el uso del servicio que ofrece la tienda a través de la búsqueda y recomendación de productos. 
+
+La tecnología utilizada refleja la importancia del Cloud Computing como agente democratizador de la IA. Sin la plataforma de Google Cloud, u otras similares,  hubiera sido imposible para un estudiante con pocos conocimientos sobre IA desarrollar un sistema como éste. Aunque es cierto que el trabajo tiene un amplio margen de mejora, como se mostrará en la sección 7.2, se ha procurado mostrar el potencial que conlleva la integración de estas aplicaciones en una tienda electrónica.
+
+Asimismo, se ha conseguido desplegar un sitio web robusto que podrá recibir una gran cantidad de tráfico sin ver mermado su rendimiento, lo que se consigue gracias a un ajuste de escala y de capacidad automáticos. Al tratarse de un servicio completamente gestionado por el proveedor, la empresa podrá centrarse en su actividad principal y olvidarse de los aspectos técnicos relacionados con la infraestructura, flexibilidad y disponibilidad de recursos.
+
+A pesar de estas ventajas, se ha concluido que Cloud Run no es la plataforma más indicada para alojar la página web. Este servicio ejecuta contenedores sin estado, por tanto las modificaciones que involucren al sistema de ficheros se perderán cuando se realice una nueva revisión del servicio. Se ha procurado minimizar este inconveniente utilizando Cloud Storage para el almacenamiento de los archivos multimedia. Sin embargo, esta solución no permite hacer perdurables los cambios relacionados con el código interno de Wordpress o sus plugins. Como puede ser la modificación de los enlaces permanentes, ya es necesario escribir en el fichero .htaccess.
+
+Este aspecto, que resulta negativo para el alojamiento de la tienda, no lo es cuando se trata de la aplicación de análisis de sentimientos. Cloud Run sí es una excelente opción para desplegar servicios que pueden ser invocados mediante una API.
+
+\section{Detalle específico de lo aprendido}
+
+Este TFG supone el último paso de un camino que comenzó hace cuatro años y éste se espera que refleje los conocimientos que he ido adquiriendo, así como mis intereses personales. Comencé mi carrera universitaria en Ingeniería Informática atraído por el campo de la Inteligencia Artificial, así que cuando mi tutor me ofreció este proyecto, comprendí que por fin podría poner un pie dentro del mundo que anhelaba.
+
+Este trabajo no sólo me ha servido para aprender nuevas tecnologías, también me ha ayudado en mi desarrollo personal. Nunca antes me había enfrentado a la realización de una tarea como ésta, siendo necesario para mí aprender a organizar mejor el tiempo, lidiar con la frustración y, sobre todo, ser constante.
+
+En relación con los aspectos puramente técnicos del proyecto, expongo en los siguientes puntos los conocimientos más importantes que he adquirido:
+
+\begin{itemize}
+    \item \textbf{Cloud computing}. He aprendido a utilizar diferentes herramientas ofrecidas por Google Cloud como Cloud SQL, Cloud Run, NLP, DialogFlow, entre otras. Durante la carrera no he tenido contacto con ninguna plataforma de este tipo y me he dado cuenta de que tenía formada una idea equivocada sobre la computación en la nube. Pensaba en este campo como un conjunto de soluciones complejas que sólo estaban al alcance de personas muy capacitadas, pero nada más lejos de la realidad. Se trata de un conjunto de herramientas relativamente sencillas de utilizar, que a excepción de algunos detalles, se encuentran muy bien documentadas por parte del proveedor.
+    
+    \item \textbf{Contenedores}. Otro elemento con el que he trabajado por primera vez. Esta tecnología ha revolucionado la forma de implementar aplicaciones y servicios. A primera vista, para personas con experiencia en esta tecnología puede parecer sencillo el trabajo realizado, sin embargo, para mí ha supuesto un gran esfuerzo que he estado encantado de acometer.
+    
+    \item \textbf{APIs}. Durante la realización de mis prácticas curriculares en Altipla Consulting tuve la suerte de aprender a implementar una API utilizando gRPC y Protobuf. En este proyecto decidí utilizar un enfoque más sencillo y he aprendido a implementar una API HTTP.
+    
+    \item \textbf{Análisis de sentimientos}. Dados mis pocos conocimientos iniciales sobre este campo, he tenido que investigar y leer mucho acerca del mismo para realizar el trabajo. Tras finalizar, ha crecido tanto mi entendimiento como interés por esta área.
+    
+    \item \textbf{Interfaces conversacionales}. Me recuerdo a mí mismo durante mi segundo año de carrera manteniendo una conversación con Eliza en MS DOS. Para mí fue una experiencia muy enriquecedora y que me gustó mucho. Por ese entonces no conocía nada sobre el funcionamiento de un motor conversacional, pero gracias al pequeño chatbot que he creado haciendo uso de Dialogflow he aprendido mucho sobre esta tecnología.
+\end{itemize}
+
+
+La idea más importante que he adquirido y quiero resaltar es la necesidad de comunicar de forma clara y precisa el trabajo y la investigación realizados, es decir, entender que la comunicación es un aspecto fundamental. 
+
+\section{Trabajo futuro}
+
+En primer lugar, sobre la herramienta de análisis de sentimientos desarrollada, sería conveniente ajustar más la evaluación de las opiniones. Se puede tener en cuenta el parámetro "Magnitud" para eliminar posibles ambigüedades que se produzcan y representar de forma más precisa la valoración del usuario. Si una frase es evaluada con una puntuación cercana a cero puede ser porque posee poca intensidad o presenta emociones mixtas. En estas situaciones se puede utilizar la magnitud para eliminar la ambigüedad, ya que si realmente la frase es neutral, ésta tendrá asociada un valor de magnitud bajo. 
+
+En segundo lugar, en cuanto a la interfaz conversacional, aún le queda un gran camino para ser una herramienta de calidad que resulte de utilidad a los clientes. Sería adecuado ahondar mucho más en sus funcionalidades. El primer paso consistiría en conectar el bot conversacional con la base de datos de la página web, consiguiendo que éste pueda buscar y recomendar productos para el cliente en base a diferentes parámetros, como el precio, la marca, su valoración media, etc. También se podrían incluir muchas más frases para interactuar con el agente hasta poder convertirlo en un verdadero empleado del Servicio de Atención al Cliente. Automatizar un proceso de negocio complejo, como puede ser la atención al cliente, es una tarea complicada que puede considerarse como el objeto de un trabajo de fin de estudios en sí misma.
+
+En tercer lugar, el método de autenticación utilizado por la aplicación de análisis de sentimientos es muy simple. Consiste en añadir un token a las peticiones realizadas al servicio. Con el objetivo de mejorar la seguridad se plantea utilizar el servicio Firebase Authentication para implementar un modo de acceso basado en usuario y contraseña. Al tratarse de un sistema completamente gestionado por Google se conseguiría una mayor seguridad y mejor protección de los datos.
+
+En cuarto lugar, como se ha mencionado al comienzo de este capítulo Cloud Run no es la plataforma más apropiada para desplegar la página web. Google Cloud cuenta con otras alternativas como GKE (Google Kubernetes Engine) y plataformas como Microsoft, Amazon o IBM también ofrecen servicios similares. Se debería estudiar más a fondo todas las opciones disponibles para determinar cuál es la opción que mejor se ajusta a las necesidades de un sitio web.
+
+Por último, es importante encontrar formas de trasferir el conocimiento adquirido a las empresas donde pueda resultar de utilidad. Especialmente, es crucial insistir al tejido empresarial de las zonas rurales de Almería sobre la necesidad de acometer un proceso de transformación digital, poniendo a su disposición herramientas como las desarrolladas con este trabajo.

@@ -1,0 +1,167 @@
+%\documentclass[11pt, oneside]{book}
+\documentclass[12pt, twoside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Paquetes y librerías iniciales para un documento,   
+%           Graficos, simbolos, tablas, bibliografía
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------------------
+% Esto es para que el LaTeX sepa que el texto está en español:
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\selectlanguage{spanish}
+%---------------------------------------------------------------------------
+% para uso en modo matemático
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+%---------------------------------------------------------------------------
+% Para las imagenes 
+
+\usepackage[dvips]{graphicx}
+\graphicspath{{Figuras/}} % se fija el camino para las figuras
+\usepackage{rotating}  %para poder rotar las figuras
+\usepackage{wrapfig}
+
+%---------------------------------------------------------------------------
+% PIES DE FOTOS Y TABLAS 
+
+\usepackage{float} % para objetos flotantes
+\usepackage{caption} % para los pies de fotos o tablas
+\usepackage{subcaption}
+\captionsetup{font=small,labelfont=bf} % para tamaño y tipo fuentes pie de foto
+\usepackage{multirow} % para las tablas unir columnas
+\usepackage{multicol} %para escribir en multiples columnas
+\usepackage{csvsimple}
+\usepackage{booktabs}
+\usepackage{xcolor, colortbl}
+
+\definecolor{Gray}{gray}{0.85}
+
+% Referencias y biblio
+
+\usepackage{pdfpages}
+%\usepackage[pdftex,breaklinks=true,hidelinks]{hyperref} % para referencias/indice en pdf
+
+\usepackage[
+breaklinks=true,colorlinks=true,
+linkcolor=blue,urlcolor=blue,citecolor=blue,% PDF VIEW
+linkcolor=black,urlcolor=black,citecolor=black,% PRINT
+bookmarks=true,bookmarksopenlevel=2]{hyperref}
+
+\usepackage{emptypage}
+\usepackage{ragged2e} %Justificacion
+
+%\usepackage[toc,title,page]{appendix}
+
+%Para bibliografía
+%\usepackage[numbers,square]{natbib}
+%Bibliografía y Webgrafía
+\usepackage[resetlabels,labeled]{multibib}
+\newcites{W}{WEBGRAFÍA}
+%\bibliographystyle{apalike}
+
+%%%%%%%%% HAbituales estilos
+%plainnat
+%%abbrvnat
+%unsrtnat  %Items in bibliography sorted in order cited)
+%IEEEtran
+
+%
+
+%%%%%%%%%%%%%%%%%%%% Formato de la ual %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\usepackage{UAL}
+\usepackage[print,doble]{UAL}
+\usepackage{codigo}
+
+%%%%%% PAQUETES INCORPORADOS POR EL USUARIO
+
+\usepackage{longtable}   %Tablas largas
+\usepackage{verbatim}
+\usepackage{textcomp} %para completar los signos válidos
+\usepackage{eurosym} %simbolo del euro [\euro]
+\usepackage[bottom]{footmisc}
+\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{spanish}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Datos identificativos del TFG                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{Jonathan Moreno Jiménez}
+\titulo{Estudio e implementación de un servicio de análisis de sentimientos para una tienda electrónica }
+\subTitulo{DEPARTAMENTO DE
+INFORMÁTICA\\  ÁREA DE LENGUAJES Y SISTEMAS INFORMÁTICOS}
+\estudios{Grado en Informática }
+\universidad{UNIVERSIDAD DE ALMERÍA}
+\director{José Antonio Torres Arriaza} 
+\curso {2019/2020}
+
+
+\pagestyle{cab}
+
+\begin{document}
+\frontmatter
+
+\portada
+
+\begin{dedicatoria}
+Agradezco este trabajo a mi familia y amigos, que me ayudan cada día a continuar avanzando. Vivir es resistir, pero a veces soportar esta carga en soledad es demasiado difícil.
+
+\vspace{1.5cm}
+
+También doy gracias a nuestra Educación Pública, por permitir que una persona sin apenas recursos económicos haya podido despertar culturalmente a través de la Universidad. Merece la pena que seamos nosotros, estudiantes y profesores, quienes continuemos luchando por conseguir alcanzar la excelencia en la enseñanza, pues sólo a través de ella podemos aspirar a ser ciudadanos libres con el suficiente espíritu crítico para cuestionar la realidad impuesta y cambiar el devenir de lo habitual.
+
+\vspace{1.5cm}
+
+SCIENTA VINCERE TENEBRAS
+\newline La ciencia vence a las tinieblas
+\newline \footnotesize{\textit{Lema de la Universidad Libre de Bruselas}}
+   
+\end{dedicatoria}
+
+
+\input{indicesyrefe}
+
+\addcontentsline{toc}{chapter}{Resumen y Abstract}
+
+\chapter*{Resumen y Abstract}
+
+\input{resumentexto.tex}
+
+\mainmatter
+%\marcagua
+
+\input{Capítulos/01_introduccion}
+\input{Capítulos/02_estado_del_arte}
+\input{Capítulos/03_etapas_del_desarrollo}
+\input{Capítulos/04_analisis}
+\input{Capítulos/05_tecnologias_herramientas}
+\input{Capítulos/06_desarrollo}
+\input{Capítulos/07_conclusiones}
+
+\addcontentsline{toc}{chapter}{Bibliografía }
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\addcontentsline{toc}{chapter}{Webgrafía }
+\bibliographystyleW{IEEEtran}
+\bibliographyW{webs}
+
+\appendix
+
+\input{apendices}
+
+\clearpage
+\backmatter
+
+\input {contra}
+
+\end{document}
+

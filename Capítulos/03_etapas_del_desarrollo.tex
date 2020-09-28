@@ -1,0 +1,155 @@
+\chapter{Etapas de desarrollo} 
+\label{sec:fases}
+
+El desarrollo de este proyecto se divide en cinco etapas generales:
+\begin{enumerate}
+    \item \textbf{Etapa de análisis}. Se hará un estudio de los objetivos a alcanzar y las tecnologías con las que se llevarán a cabo. Se pretende conseguir una idea clara y precisa sobre las tareas a realizar en etapas posteriores. 
+    \item \textbf{Etapa de implementación web}. Se realizará la implementación de un sitio web para un negocio ficticio. Dicha página será la base sobre la que se trabajará en las siguientes etapas.   
+    \item \textbf{Etapa de implementación de los servicios}. Se integrarán dos servicios bien diferenciados en la página de comercio electrónico:
+        \begin{enumerate}
+            \item Análisis de sentimientos. Con el objetivo de implementar este servicio se utilizará la herramienta NLP (Natural Language Processing), ofrecida por la plataforma de Google Cloud. Para ello, es necesario desarrollar un cliente que actúe como intermediario entre la página web y la llamada a NLP. Esta aplicación funcionará como una especie de envoltorio sobre la API (Application Programming Interface) original.
+            \item Bot conversacional. Se desarrollará usando el servicio DialogFlow de Google y, posteriormente, se integrará en la página web.
+        \end{enumerate}
+    \item \textbf{Etapa de despliegue}. Se utilizarán contenedores para desplegar el sistema en una plataforma sin servidor.
+    \item \textbf{Etapa de evaluación}. Se procederá a comprobar el correcto funcionamiento de la página web y las herramientas integradas.
+\end{enumerate}
+
+\newpage
+
+Cada una de las etapas se ha dividido en diferentes tareas, de forma que a cada tarea se le ha asignado una fecha de inicio y de fin, así como el número de horas que se espera invertir para su realización. En la siguiente tabla se presenta la planificación temporal prevista para la realización del proyecto:
+
+
+\begin{table}[!ht]
+  \centering
+    \scalebox{0.85}[0.85] {
+    \begin{tabular}{lcccc}
+    \toprule
+    \multicolumn{1}{c}{\textbf{ACTIVIDAD}} & \textbf{FECHA INICIO} & \textbf{DURACIÓN  } & \textbf{FECHA FIN } & \textbf{HORAS} \\
+    \midrule
+    PROYECTO & 01/02/2020 & 111   & 22/05/2020 & 300 \\
+    \midrule
+      ANÁLISIS & 01/02/2020 & 29    &  01/03/2020 & 40 \\
+    \midrule
+        Estudio del problema & 01/02/2020 & 15    & 16/02/2020 & 10 \\
+    \midrule
+        Requisitos & 01/02/2020 & 29    &  01/03/2020 & 15 \\
+    \midrule
+        Herramientas & 01/02/2020 & 29    &  01/03/2020 & 15 \\
+    \midrule
+      IMPLEMENTACIÓN WEB & 02/03/2020 & 15    & 17/03/2020 & 30 \\
+    \midrule
+        Crear Wordpress & 02/03/2020 & 3     & 05/03/2020 & 2 \\
+    \midrule
+        Introducir productos & 06/03/2020 & 3     & 09/03/2020 & 5 \\
+    \midrule
+        Introducir opiniones & 06/03/2020 & 3     & 09/03/2020 & 3 \\
+    \midrule
+        Diseño & 10/03/2020 & 2     & 12/03/2020 & 10 \\
+    \midrule
+        Desarrollo de componentes & 13/03/2020 & 4     & 17/03/2020 & 10 \\
+    \midrule
+      IMPLEMENTACIÓN DE SERVICIOS & 18/03/2020 & 53    & 10/05/2020 & 130 \\
+    \midrule
+        Desarrollo APIs propias & 18/03/2020 & 18    & 05/04/2020 & 40 \\
+    \midrule
+        Conexión Google NLP  & 06/04/2020 & 6     & 12/04/2020 & 10 \\
+    \midrule
+        Integrar APIs en Wordpress & 13/04/2020 & 6     & 19/04/2020 & 20 \\
+    \midrule
+        Despliegue API propia en Gcloud & 20/04/2020 & 6     & 26/04/2020 & 15 \\
+    \midrule
+        Implementar chatbot & 27/04/2020 & 6     & 03/05/2020 & 30 \\
+    \midrule
+        Desplegar Wordpress en Gcloud & 03/05/2020 & 7     & 10/05/2020 & 15 \\
+    \midrule
+      EVALUACIÓN & 11/05/2020 & 11    & 22/05/2020 & 30 \\
+    \midrule
+        Testing & 11/05/2020 & 11    & 22/05/2020 & 15 \\
+    \midrule
+        Refactorización del código & 11/05/2020 & 11    & 22/05/2020 & 15 \\
+    \midrule
+      MEMORIA & 01/02/2020 & 111   & 22/05/2020 & 70 \\
+    \bottomrule
+    \end{tabular}
+    }
+  \label{tab:horas} \caption{Estimación de horas para cada etapa}
+\end{table}
+
+\newpage
+
+A continuación, con el propósito de proporcionar una vista general de la programación de las tareas, se ha realizado un diagrama de Gantt:
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width =\textwidth]{Figuras/Planificación.png}
+	\end{center}
+	\caption{\label{fig:Gantt} Diagrama de Gantt}
+\end{figure}\textbf{}
+
+La inversión real de horas para completar el trabajo es mucho mayor que la previsión anterior. En un principio se esperaba acabar a finales de marzo para optar a la convocatoria de junio; sin embargo, la planificación fue demasiado optimista y se tuvo que aplazar hasta septiembre. Finalmente se han requerido 442 horas, un aumento del 47,33\% (142 horas) respecto a la estimación original. Estas horas se han repartido como sigue: 10 horas semanales durante los meses de febrero, marzo, abril y mayo y 24 durante junio, julio y agosto. 
+\newline
+
+La principal causa del retraso fue la imposibilidad de cumplir con las horas planificadas a causa de la continuación de las prácticas curriculares con una beca Ícaro. En relación a la implementación del sistema, una vez desplegado en la nube, surgió un problema relacionado con la comunicación entre la página web y la aplicación de análisis de sentimientos: no llegaba ninguna petición de evaluación a la aplicación. Además, se minusvaloró el tiempo necesario para la redacción del trabajo. Seguidamente se muestra la duración final:
+
+\newpage
+
+% Inversión final de tiempo
+\begin{table}[h]
+  \centering
+    \scalebox{0.85}[0.85] {
+    \begin{tabular}{lccc}
+    \toprule
+    \multicolumn{1}{c}{{\textbf{ACTIVIDAD}}} & {\textbf{FECHA INICIO}} & {\textbf{DURACIÓN  }} & {\textbf{FECHA FIN }} \\
+    \midrule
+    \textbf{PROYECTO} & \textbf{01/02/2020} & \textbf{211} & \textbf{30/08/2020} \\
+    \midrule
+    \textbf{  ANÁLISIS} & \textbf{01/02/2020} & \textbf{29} & \textbf{ 01/03/2020} \\
+    \midrule
+        Estudio del problema & 01/02/2020 & 15    & 16/02/2020 \\
+    \midrule
+        Requisitos & 01/02/2020 & 29    &  01/03/2020 \\
+    \midrule
+        Herramientas & 01/02/2020 & 29    &  01/03/2020 \\
+    \midrule
+    \textbf{  IMPLEMENTACIÓN WEB} & \textbf{02/03/2020} & \textbf{13} & \textbf{15/03/2020} \\
+    \midrule
+        Crear Wordpress & 02/03/2020 & 3     & 05/03/2020 \\
+    \midrule
+        Introducir productos & 06/03/2020 & 3     & 09/03/2020 \\
+    \midrule
+        Introducir opiniones & 06/03/2020 & 3     & 09/03/2020 \\
+    \midrule
+        Diseño & 10/03/2020 & 5     & 15/03/2020 \\
+    \midrule
+    \textbf{  IMPLEMENTACIÓN DE SERVICIOS} & \textbf{18/03/2020} &  \textbf{142} & \textbf{07/08/2020} \\
+    \midrule
+        Desarrollo API propia & 18/03/2020 & 18    & 05/04/2020 \\
+    \midrule
+        Conexión Google NLP  & 06/04/2020 & 3     & 09/04/2020 \\
+    \midrule
+        Conexión con Cloud SQL & 10/04/2020 & 10    & 20/04/2020 \\
+    \midrule
+        Despliegue API propia en Gcloud & 21/04/2020 & 6     & 27/04/2020 \\
+    \midrule
+        Construcción del chatbot & 28/04/2020 & 19    & 17/05/2020 \\
+    \midrule
+        Integrar herramientas en Wordpress (local) & 18/05/2020 & 6     & 24/05/2020 \\
+    \midrule
+        Desplegar Wordpress en Gcloud & 25/05/2020 & 6     & 31/05/2020 \\
+    \midrule
+        Integrar herramientas en Wordpress (online) & 01/06/2020 & 67    & 07/08/2020 \\
+    \midrule
+        Solucionar problemas de diseño Wordpress & 15/06/2020 & 7     & 22/06/2020 \\
+    \midrule
+    \textbf{  EVALUACIÓN} & \textbf{01/07/2020} & 20    & \textbf{21/07/2020} \\
+    \midrule
+        Testing & 01/07/2020 & 20    & 21/07/2020 \\
+    \midrule
+        Refactorización del código & 01/07/2020 & 20    & 21/07/2020 \\
+    \midrule
+    \textbf{  MEMORIA} & \textbf{01/02/2020} & 211   & \textbf{30/08/2020} \\
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:horasfinales} \caption{Duración final de cada etapa del proyecto}
+\end{table}%

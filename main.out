@@ -1,0 +1,77 @@
+\BOOKMARK [0][-]{chapter*.4}{Resumen y Abstract}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Planteamiento del problema}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Objetivos del proyecto}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Organizaci\363n del trabajo}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Estado del arte}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Computaci\363n en la nube}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Comercio electr\363nico}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Computaci\363n en la nube y comercio electr\363nico}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{Democratizaci\363n de la IA}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.5}{An\341lisis de sentimientos}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.6}{Interfaces conversacionales}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Etapas de desarrollo}{}% 13
+\BOOKMARK [0][-]{chapter.4}{An\341lisis}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Descripci\363n detallada de la soluci\363n}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Casos de uso del sistema}{chapter.4}% 16
+\BOOKMARK [2][-]{subsection.4.2.1}{Diagramas de casos de uso}{section.4.2}% 17
+\BOOKMARK [2][-]{subsection.4.2.2}{Descripci\363n de actores del sistema}{section.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.2.3}{Descripci\363n de casos de uso del sistema}{section.4.2}% 19
+\BOOKMARK [1][-]{section.4.3}{Requisitos funcionales}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{Requisitos no funcionales}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.5}{An\341lisis econ\363mico}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.5.1}{Tarifas de los servicios de Google Cloud}{section.4.5}% 23
+\BOOKMARK [3][-]{subsubsection.4.5.1.1}{Google Natural Language Processing}{subsection.4.5.1}% 24
+\BOOKMARK [3][-]{subsubsection.4.5.1.2}{Cloud Run}{subsection.4.5.1}% 25
+\BOOKMARK [3][-]{subsubsection.4.5.1.3}{Cloud SQL}{subsection.4.5.1}% 26
+\BOOKMARK [3][-]{subsubsection.4.5.1.4}{Container Registry}{subsection.4.5.1}% 27
+\BOOKMARK [3][-]{subsubsection.4.5.1.5}{Cloud Logging}{subsection.4.5.1}% 28
+\BOOKMARK [3][-]{subsubsection.4.5.1.6}{Dialogflow}{subsection.4.5.1}% 29
+\BOOKMARK [2][-]{subsection.4.5.2}{Presupuesto de realizaci\363n del proyecto}{section.4.5}% 30
+\BOOKMARK [3][-]{subsubsection.4.5.2.1}{Costes directos}{subsection.4.5.2}% 31
+\BOOKMARK [3][-]{subsubsection.4.5.2.2}{Costes totales}{subsection.4.5.2}% 32
+\BOOKMARK [0][-]{chapter.5}{Tecnolog\355as y Herramientas}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Postman}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Git}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{Github}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.4}{Trello}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.5}{Visual Studio Code}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.6}{Xampp}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.7}{Wordpress}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.7.1}{WooCommerce}{section.5.7}% 41
+\BOOKMARK [2][-]{subsection.5.7.2}{MyChatbot}{section.5.7}% 42
+\BOOKMARK [2][-]{subsection.5.7.3}{WP-Stateless}{section.5.7}% 43
+\BOOKMARK [1][-]{section.5.8}{GoLang}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.9}{Dockers}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.10}{Servicios cloud de Google}{chapter.5}% 46
+\BOOKMARK [2][-]{subsection.5.10.1}{Google Natural Language Processing}{section.5.10}% 47
+\BOOKMARK [2][-]{subsection.5.10.2}{Cloud Run}{section.5.10}% 48
+\BOOKMARK [2][-]{subsection.5.10.3}{Cloud SQL}{section.5.10}% 49
+\BOOKMARK [2][-]{subsection.5.10.4}{Container Registry}{section.5.10}% 50
+\BOOKMARK [2][-]{subsection.5.10.5}{Cloud Logging}{section.5.10}% 51
+\BOOKMARK [2][-]{subsection.5.10.6}{DialogFlow}{section.5.10}% 52
+\BOOKMARK [0][-]{chapter.6}{Desarrollo}{}% 53
+\BOOKMARK [1][-]{section.6.1}{Arquitectura}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.2}{Implementaci\363n}{chapter.6}% 55
+\BOOKMARK [2][-]{subsection.6.2.1}{P\341gina web}{section.6.2}% 56
+\BOOKMARK [2][-]{subsection.6.2.2}{An\341lisis de sentimientos}{section.6.2}% 57
+\BOOKMARK [3][-]{subsubsection.6.2.2.1}{Integraci\363n}{subsection.6.2.2}% 58
+\BOOKMARK [2][-]{subsection.6.2.3}{Bot conversacional}{section.6.2}% 59
+\BOOKMARK [3][-]{subsubsection.6.2.3.1}{Flujos de conversaci\363n}{subsection.6.2.3}% 60
+\BOOKMARK [3][-]{subsubsection.6.2.3.2}{Intents}{subsection.6.2.3}% 61
+\BOOKMARK [3][-]{subsubsection.6.2.3.3}{Entidades}{subsection.6.2.3}% 62
+\BOOKMARK [3][-]{subsubsection.6.2.3.4}{Integraci\363n}{subsection.6.2.3}% 63
+\BOOKMARK [1][-]{section.6.3}{Despliegue}{chapter.6}% 64
+\BOOKMARK [2][-]{subsection.6.3.1}{P\341gina web}{section.6.3}% 65
+\BOOKMARK [3][-]{subsubsection.6.3.1.1}{Modificaciones necesarias del proyecto local}{subsection.6.3.1}% 66
+\BOOKMARK [3][-]{subsubsection.6.3.1.2}{Dockerfile}{subsection.6.3.1}% 67
+\BOOKMARK [3][-]{subsubsection.6.3.1.3}{Configuraci\363n del servicio en Cloud Run}{subsection.6.3.1}% 68
+\BOOKMARK [2][-]{subsection.6.3.2}{An\341lisis de sentimientos}{section.6.3}% 69
+\BOOKMARK [3][-]{subsubsection.6.3.2.1}{Modificaciones necesarias del proyecto local}{subsection.6.3.2}% 70
+\BOOKMARK [3][-]{subsubsection.6.3.2.2}{Dockerfile}{subsection.6.3.2}% 71
+\BOOKMARK [3][-]{subsubsection.6.3.2.3}{Configuraci\363n del servicio en Cloud Run}{subsection.6.3.2}% 72
+\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 73
+\BOOKMARK [1][-]{section.7.1}{Detalle espec\355fico de lo aprendido}{chapter.7}% 74
+\BOOKMARK [1][-]{section.7.2}{Trabajo futuro}{chapter.7}% 75
+\BOOKMARK [0][-]{section.7.2}{Bibliograf\355a }{}% 76
+\BOOKMARK [0][-]{section.7.2}{Webgraf\355a }{}% 77

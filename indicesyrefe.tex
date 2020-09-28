@@ -1,0 +1,65 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% ESTO ES PARA LA TABLA DE CONTENIDOS (INDICE)%%%%%%%%%%%%%%%%
+
+
+\setcounter{secnumdepth}{3} %niveles en capitulos hasta (1.1.1)
+\setcounter{tocdepth}{3} %niveles en indice hasta (1.1)
+
+
+\addtocontents{toc}{~\hfill\small{Página}\par} %añade "pagina" a tabla de contenidos
+\addtocontents{toc}{\vspace{2pt} \hrule \vspace{5mm} \par}
+
+%\renewcommand\contentsname{Índice de contenidos}
+\tableofcontents
+\listoffigures % indice de figuras
+\listoftables % indice de tablas
+\lstlistoflistings % indice de listados
+
+
+
+%---------------------------------------------------------------------------
+% comienzo de relacion abreviaturas y/o acrónimos
+%---------------------------------------------------------------------------
+
+
+%\addcontentsline{toc}{section}{ABREVIATURAS}
+\clearpage
+\vspace{0.2cm}
+\section*{ABREVIATURAS}
+
+\begin{tabular}{ l   |    l  }
+	
+
+&\\
+   ESI & Escuela Superior de ingeniería \\
+   TFG & Trabajo fin de grado\\
+   UAL & Universidad de Almería \\
+   IA & Inteligencia artificial \\
+   ID & Integrated Development Environment \\
+   IT & Information Technology \\
+   CGI & Common Gateway Interface \\
+   CMS & Content Management System \\
+   API & Application Programming Interface \\
+   PYME & Pequeña y mediana empresa \\
+   NLP & Natural Language Processing \\
+   LXC & Linux Containers \\
+   REST & Representational State Transfer \\
+   B2B & Business to Business \\
+   B2C & Business to Consumer \\
+   C2C & Consumer to Consumer \\
+   IAAS & Infrastructure as a service \\
+   SAAS & Software as a service \\
+   PAAS & Platform as a service \\
+   CAAS & Containers as a service \\
+   FAAS & Functions as a service \\
+   URL & Uniform Resource Location \\
+   URI & Uniform Resource Identifier \\
+   RPC & Remote Procedure Call \\
+   SLA & Service Level Agreement \\
+   IDE & Integrated Development Environment \\
+   HTTP & Hypertext Transfer Protocol \\
+   ITRE & Committee on Industry, Research and Energy \\
+&\\
+
+\end{tabular}
