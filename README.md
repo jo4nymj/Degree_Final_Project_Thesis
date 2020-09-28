@@ -1,2 +1,4 @@
-# Degree_Final_Project_Thesis
-Documentation about my degree final proyect at UAL
+# Study and implementation of a sentiment analysis service for an e-commerce
+
+### Author: Jonathan Moreno Jiménez
+### Supervisor: José Antonio Torres Arriaza
